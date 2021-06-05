@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Wie trekt het kortste strootje</title>
-
     <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -12,12 +11,23 @@
     <script src="js/js.js"></script>
 </head>
 <body>
-<div class="container-lg">
-    <div class="col-5">
-        <input type="text" name="names" id="names">
-        <button id="click">Klik hier!</button>
-        <h2>Winner is:</h2>
-        <div id="winner">{{ winner }}</div>
+<div id="top" class="row site flex-center">
+    <div class="paper">
+        <div class="col-12">
+            <h5>Voer hier verschillende namen in</h5>
+        </div>
+        <div class="col-12">
+            <input type="text" name="names" id="names" placeholder="Linda, Daan, Jesse, Gertjan">
+        </div>
+        <div class="col-12">
+            <button id="click">Klik hier!</button>
+        </div>
+        <div class="col-12">
+            <h2>Winner is:</h2>
+        </div>
+        <div class="col-12">
+            <div id="winner">{{ winner }}</div>
+        </div>
     </div>
 </div>
 <script>
